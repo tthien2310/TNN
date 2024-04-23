@@ -13,3 +13,7 @@ height: calc(100% - 73px);
 height: 100%;
 }
 }
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
