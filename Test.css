@@ -1,0 +1,15 @@
+
+
+.card-body {
+    display: flex; /* Sử dụng flexbox */
+    justify-content: center; /* Căn giữa theo chiều ngang */
+    align-items: start; /* Căn giữa theo chiều dọc */
+    flex-direction: column; /* Xếp chồng các phần tử theo chiều dọc */
+}
+
+.select-quiz-options {
+    display: flex; /* Sử dụng flexbox */
+    justify-content: center; /* Căn giữa theo chiều ngang */
+    align-items: start; /* Căn giữa theo chiều dọc */
+    flex-direction: column; /* Xếp chồng các phần tử theo chiều dọc */
+}
