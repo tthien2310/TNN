@@ -16,6 +16,7 @@
   <title>Vie-J</title>
 
   <link rel="stylesheet" href="Test.css">
+  <link rel="stylesheet" href="/TNN/js/Popup.js">
 
   <!-- bootstrap core css -->
   <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
@@ -92,19 +93,35 @@
                               <a href="#" class="nav-link text-dark" aria-current="true">Nghe</a>
                             </li>
                           </ul>
-                          <button class="btn btn-warning btn-block">Hoàn thành bài thi</button>
+                          <button class="btn btn-warning btn-block" onclick="momodal()"> Hoàn thành bài thi</button>
+
+                          <div class="nenmodal" id="nenmodal-1">
+                            <div class="nenmodal2"></div>
+                            <div class="ndmodal">
+                            <div class="closemodal"><button onclick="momodal()">×</button></div>
+                            <div class="titlemodal">Bạn chắc chắn muốn nộp bài thi?</div>
+                            <button class="btn btn-warning">Nộp bài</button>
+                            <button class="btn btn-danger">Hủy</button>
+                            </div>
+                            </div>
+
+                            <script>
+                              function momodal(){
+                              document.getElementById("nenmodal-1").classList.toggle("active");
+                              }
+                              </script>
                         </div>
                       </div>
                 </div>
                   
                 <div class="col-8">
-                    <div class="card text-center">
-                        <div class="card-header">
+                    <div class="card">
+                        <div class="card-header" style="text-align: center;">
                           <h6>Từ vựng & Ngữ pháp</h6>
                         </div>
-                        <div class="card-body">
+                        <div class="card-body" style="overflow-y: scroll; overflow-x: hidden; height: 500px;">
                             <div class="exam-quiz-wrapper" data-exam-section-id="2947">
-                                <div class="quiz-content" id="quiz-54014">
+                                <div class="quiz-content" id="quiz-54014" style="text-align: center;">
                                 <div class="question">Chuyển Kanji sang Hira <br> ＿＿＿の言葉の読み方として最もよいものを、1・2・3・4から一つ選びなさい。</div>
                                 </div>
                                 </div>
@@ -115,7 +132,7 @@
 
                                 <div class="quiz-content" id="quiz-54016">
                                 <div class="question">家賃を<u>滞納</u>している人に、早く払うよう促した。</div>
-                                <div class="select-quiz-options" data-maximum-choose="1" data-multi-choices="0" id="quiz-id-54016" style="">
+                                <div class="select-quiz-options" data-maximum-choose="1" data-multi-choices="0" id="quiz-id-54016">
                                 <input type="hidden" name="answers[22076022][]" id="answers_22076022_">
                                 <div class="select-quiz-option" data-user-exam-detail-id="22076022" style="display: block;">
                                 <div class="quiz-option-content" data-user-exam-detail-id="22076022">
@@ -284,6 +301,182 @@
                                 </div>
                                 </div>
                                 </div>
+
+                                <hr>
+
+                                <div class="exam-quiz-wrapper" data-exam-section-id="2947">
+
+                                  <div class="quiz-content" id="quiz-54016">
+                                  <div class="question">家賃を<u>滞納</u>している人に、早く払うよう促した。</div>
+                                  <div class="select-quiz-options" data-maximum-choose="1" data-multi-choices="0" id="quiz-id-54016" style="">
+                                  <input type="hidden" name="answers[22076022][]" id="answers_22076022_">
+                                  <div class="select-quiz-option" data-user-exam-detail-id="22076022" style="display: block;">
+                                  <div class="quiz-option-content" data-user-exam-detail-id="22076022">
+                                  <input type="radio" name="answers[22076022][]" id="select-option-208935" value="208935" checked="checked">
+                                  <label for="select-option-208935">
+                                  たいなん
+                                  </label>
+                                  </div>
+                                  </div>
+                                  <div class="select-quiz-option" data-user-exam-detail-id="22076022" style="display: block;">
+                                  <div class="quiz-option-content" data-user-exam-detail-id="22076022">
+                                  <input type="radio" name="answers[22076022][]" id="select-option-208936" value="208936">
+                                  <label for="select-option-208936">
+                                  たいのう
+                                  </label>
+                                  </div>
+                                  </div>
+                                  <div class="select-quiz-option" data-user-exam-detail-id="22076022" style="display: block;">
+                                  <div class="quiz-option-content" data-user-exam-detail-id="22076022">
+                                  <input type="radio" name="answers[22076022][]" id="select-option-208937" value="208937">
+                                  <label for="select-option-208937">
+                                  だいなん
+                                  </label>
+                                  </div>
+                                  </div>
+                                  <div class="select-quiz-option" data-user-exam-detail-id="22076022" style="display: block;">
+                                  <div class="quiz-option-content" data-user-exam-detail-id="22076022">
+                                  <input type="radio" name="answers[22076022][]" id="select-option-208938" value="208938">
+                                  <label for="select-option-208938">
+                                  だいのう
+                                  </label>
+                                  </div>
+                                  </div>
+                                  </div>
+                                  </div>
+                                  </div>
+  
+                                  <hr>
+  
+                                  <div class="exam-quiz-wrapper" data-exam-section-id="2947">
+  
+                                      <div class="quiz-content" id="quiz-54016">
+                                      <div class="question">家賃を<u>滞納</u>している人に、早く払うよう促した。</div>
+                                      <div class="select-quiz-options" data-maximum-choose="1" data-multi-choices="0" id="quiz-id-54016" style="">
+                                      <input type="hidden" name="answers[22076022][]" id="answers_22076022_">
+                                      <div class="select-quiz-option" data-user-exam-detail-id="22076022" style="display: block;">
+                                      <div class="quiz-option-content" data-user-exam-detail-id="22076022">
+                                      <input type="radio" name="answers[22076022][]" id="select-option-208935" value="208935" checked="checked">
+                                      <label for="select-option-208935">
+                                      たいなん
+                                      </label>
+                                      </div>
+                                      </div>
+                                      <div class="select-quiz-option" data-user-exam-detail-id="22076022" style="display: block;">
+                                      <div class="quiz-option-content" data-user-exam-detail-id="22076022">
+                                      <input type="radio" name="answers[22076022][]" id="select-option-208936" value="208936">
+                                      <label for="select-option-208936">
+                                      たいのう
+                                      </label>
+                                      </div>
+                                      </div>
+                                      <div class="select-quiz-option" data-user-exam-detail-id="22076022" style="display: block;">
+                                      <div class="quiz-option-content" data-user-exam-detail-id="22076022">
+                                      <input type="radio" name="answers[22076022][]" id="select-option-208937" value="208937">
+                                      <label for="select-option-208937">
+                                      だいなん
+                                      </label>
+                                      </div>
+                                      </div>
+                                      <div class="select-quiz-option" data-user-exam-detail-id="22076022" style="display: block;">
+                                      <div class="quiz-option-content" data-user-exam-detail-id="22076022">
+                                      <input type="radio" name="answers[22076022][]" id="select-option-208938" value="208938">
+                                      <label for="select-option-208938">
+                                      だいのう
+                                      </label>
+                                      </div>
+                                      </div>
+                                      </div>
+                                      </div>
+                                      </div>
+  
+                                      <hr>
+  
+                                      <div class="exam-quiz-wrapper" data-exam-section-id="2947">
+  
+                                          <div class="quiz-content" id="quiz-54016">
+                                          <div class="question">家賃を<u>滞納</u>している人に、早く払うよう促した。</div>
+                                          <div class="select-quiz-options" data-maximum-choose="1" data-multi-choices="0" id="quiz-id-54016" style="">
+                                          <input type="hidden" name="answers[22076022][]" id="answers_22076022_">
+                                          <div class="select-quiz-option" data-user-exam-detail-id="22076022" style="display: block;">
+                                          <div class="quiz-option-content" data-user-exam-detail-id="22076022">
+                                          <input type="radio" name="answers[22076022][]" id="select-option-208935" value="208935" checked="checked">
+                                          <label for="select-option-208935">
+                                          たいなん
+                                          </label>
+                                          </div>
+                                          </div>
+                                          <div class="select-quiz-option" data-user-exam-detail-id="22076022" style="display: block;">
+                                          <div class="quiz-option-content" data-user-exam-detail-id="22076022">
+                                          <input type="radio" name="answers[22076022][]" id="select-option-208936" value="208936">
+                                          <label for="select-option-208936">
+                                          たいのう
+                                          </label>
+                                          </div>
+                                          </div>
+                                          <div class="select-quiz-option" data-user-exam-detail-id="22076022" style="display: block;">
+                                          <div class="quiz-option-content" data-user-exam-detail-id="22076022">
+                                          <input type="radio" name="answers[22076022][]" id="select-option-208937" value="208937">
+                                          <label for="select-option-208937">
+                                          だいなん
+                                          </label>
+                                          </div>
+                                          </div>
+                                          <div class="select-quiz-option" data-user-exam-detail-id="22076022" style="display: block;">
+                                          <div class="quiz-option-content" data-user-exam-detail-id="22076022">
+                                          <input type="radio" name="answers[22076022][]" id="select-option-208938" value="208938">
+                                          <label for="select-option-208938">
+                                          だいのう
+                                          </label>
+                                          </div>
+                                          </div>
+                                          </div>
+                                          </div>
+                                          </div>
+  
+                                          <hr>
+  
+                              <div class="exam-quiz-wrapper" data-exam-section-id="2947">
+  
+                                  <div class="quiz-content" id="quiz-54016">
+                                  <div class="question">家賃を<u>滞納</u>している人に、早く払うよう促した。</div>
+                                  <div class="select-quiz-options" data-maximum-choose="1" data-multi-choices="0" id="quiz-id-54016" style="">
+                                  <input type="hidden" name="answers[22076022][]" id="answers_22076022_">
+                                  <div class="select-quiz-option" data-user-exam-detail-id="22076022" style="display: block;">
+                                  <div class="quiz-option-content" data-user-exam-detail-id="22076022">
+                                  <input type="radio" name="answers[22076022][]" id="select-option-208935" value="208935" checked="checked">
+                                  <label for="select-option-208935">
+                                  たいなん
+                                  </label>
+                                  </div>
+                                  </div>
+                                  <div class="select-quiz-option" data-user-exam-detail-id="22076022" style="display: block;">
+                                  <div class="quiz-option-content" data-user-exam-detail-id="22076022">
+                                  <input type="radio" name="answers[22076022][]" id="select-option-208936" value="208936">
+                                  <label for="select-option-208936">
+                                  たいのう
+                                  </label>
+                                  </div>
+                                  </div>
+                                  <div class="select-quiz-option" data-user-exam-detail-id="22076022" style="display: block;">
+                                  <div class="quiz-option-content" data-user-exam-detail-id="22076022">
+                                  <input type="radio" name="answers[22076022][]" id="select-option-208937" value="208937">
+                                  <label for="select-option-208937">
+                                  だいなん
+                                  </label>
+                                  </div>
+                                  </div>
+                                  <div class="select-quiz-option" data-user-exam-detail-id="22076022" style="display: block;">
+                                  <div class="quiz-option-content" data-user-exam-detail-id="22076022">
+                                  <input type="radio" name="answers[22076022][]" id="select-option-208938" value="208938">
+                                  <label for="select-option-208938">
+                                  だいのう
+                                  </label>
+                                  </div>
+                                  </div>
+                                  </div>
+                                  </div>
+                                  </div>
 
                         </div>
                         <div class="card-header">
